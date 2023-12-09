@@ -34,7 +34,7 @@ export default function App() {
     'Montserrat-Thin': require('./assets/fonts/Montserrat-Thin.ttf')
   })
 
-  if (!fontsLoaded) {
+  /*if (!fontsLoaded) {
     return (
       <>
         <StatusBar style="dark" />
@@ -44,7 +44,7 @@ export default function App() {
       </>
     )
   }
-
+*/
   return (
     <>
       <StatusBar style="dark" />

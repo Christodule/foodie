@@ -50,7 +50,7 @@ const HomeScreen = ({ navigation }) => {
   }, [search])
 
   useEffect(() => {
-    const favoriteRestaurants = getFavoriteRestaurants(filteredRestaurants, user.favorites)
+    const favoriteRestaurants = getFavoriteRestaurants(filteredRestaurants)
     const featuredRestaurants = getFeaturedRestaurants(filteredRestaurants)
     const fastestRestaurants = getFastestRestaurants(filteredRestaurants)
 
@@ -68,7 +68,7 @@ const HomeScreen = ({ navigation }) => {
   return (
     <DismissKeyboardView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerSubtitle}>Welcome {getFirstName(user.fullName)},</Text>
+        <Text style={styles.headerSubtitle}>Welcome </Text>
         <Text style={styles.headerTitle}>Enjoy your meal!</Text>
       </View>
 

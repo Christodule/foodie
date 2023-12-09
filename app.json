@@ -1,22 +1,29 @@
 {
   "expo": {
+    
     "name": "Foodie",
     "slug": "foodie",
     "description": "Food delivery app",
     "version": "1.0.0",
-    "platforms": ["ios", "android"],
+    
+    "platforms": [
+      "ios",
+      "android"
+    ],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.jpg",
+      "image": "./assets/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#FFC329"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "bundleIdentifier": "com.foodie",
       "buildNumber": "1.0.0",
@@ -29,10 +36,21 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#292D25"
       },
-      "permission": ["CAMERA", "READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"]
+      
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b5e58986-ec98-4f5d-9bb4-38a0f4ca2c66"
+      }
+    },
+    "owner": "christodule"
   }
 }

@@ -15,7 +15,7 @@ const AppNavigator = () => {
     dispatch(loadUser())
   }, [])
 
-  return <NavigationContainer>{!user ? <AuthNavigator /> : <TabsNavigator />}</NavigationContainer>
+  return <NavigationContainer>{!user ? <TabsNavigator  /> : <AuthNavigator />}</NavigationContainer>
 }
 
 export default AppNavigator
